@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: kafkacustomerdemo
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        enabled: true
+        service-id: config
+eureka:
+  instance:
+    non-secure-port: ${server.port:8090}
+  client:
+    service-url:
+      defaultZone: http://zsl:123@${eureka.host:localhost}:${eureka.port:8761}/eureka/
