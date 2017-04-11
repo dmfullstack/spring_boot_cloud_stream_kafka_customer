@@ -3,6 +3,8 @@ spring:
     name: kafkacustomerdemo
   cloud:
     config:
+      username: cl
+      password: 456
       enabled: true
       discovery:
         enabled: true
